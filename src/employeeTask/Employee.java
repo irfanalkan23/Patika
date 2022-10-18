@@ -109,6 +109,6 @@ public class Employee {
                 "\nBonus : " + bonus(workHours) +
                 "\nMaaş Artışı : " + raiseSalary(hireYear) +
                 "\nVergi ve Bonuslar ile birlikte maaş : " + ( salary + raiseSalary(hireYear) - bonus(workHours) - tax(salary) ) +
-                "\nToplam Maaş : " + ( salary + raiseSalary(hireYear) );
+                "\nToplam Maaş : " + ( salary + raiseSalary(hireYear) + bonus(workHours)  - tax(salary));
     }
 }
