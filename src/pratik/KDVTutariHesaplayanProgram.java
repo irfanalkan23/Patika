@@ -1,12 +1,25 @@
 package pratik;
 
+import java.util.Scanner;
+
 public class KDVTutariHesaplayanProgram {
+
+    //Link to course page: https://app.patika.dev/courses/java101/pratik-kdv-hesaplama
 
     public static void main(String[] args) {
 
+        Scanner input = new Scanner(System.in);
 
+        System.out.println("Fiyat değeri girin : ");
+        double fiyat = input.nextDouble();
 
+        //fiyat 0 ve 1000 TL arasında ise KDV oranı %18
+        //1000 TL'den büyük ise KDV oranını %8
+        double KDVOrani = fiyat < 1000 ? 0.18 : 0.08;
 
+        System.out.println("KDV'siz Fiyat = " + fiyat);
+        System.out.println("KDV'li Fiyat = " + (fiyat + fiyat*KDVOrani));
+        System.out.println("KDV tutarı = " + fiyat*KDVOrani);
     }
 }
 /*
@@ -16,9 +29,7 @@ Java ile kullanıcıdan alınan para değerinin KDV'li fiyatını ve KDV tutarı
 (Not : KDV tutarını 18% olarak alın)
 
 KDV'siz Fiyat = 10;
-
 KDV'li Fiyat = 11.8;
-
 KDV tutarı = 1.8;
 
 Ödev
