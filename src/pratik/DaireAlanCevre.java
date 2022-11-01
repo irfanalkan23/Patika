@@ -1,6 +1,5 @@
 package pratik;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class DaireAlanCevre {
