@@ -38,7 +38,7 @@ public class ManavKasa {
         double toplamTutar = armut*armutFiyat + elma*elmaFiyat + domates*domatesFiyat
                 + muz*muzFiyat + patlican*patlicanFiyat;
 
-        System.out.println("Toplam Tutar : " + toplamTutar);
+        System.out.println("Toplam Tutar : " + toplamTutar + " TL");
     }
 }
 /*
