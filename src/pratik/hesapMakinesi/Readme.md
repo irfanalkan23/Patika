@@ -1,10 +1,13 @@
 # Task
 Hesap Makinesi.
 
-# Task Description
+## Task Link
+https://app.patika.dev/courses/java101/pratik-hesap-mak-1
+
+## Task Description
 Switch-case kullanarak hesap makinesi yapınız.
 
-# Notes
+## Notes
 ebebek Java & QA & SAP Spartacus Practicum.
 
 ## Author
