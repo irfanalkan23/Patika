@@ -24,26 +24,26 @@ public class SayiSiralama {
         //Sayıları karşılaştırıyoruz ve küçükten büyüğe sıralıyoruz
         if(num1 < num2 && num1 < num3){
             if (num2 < num3){
-                min=1; mid=2; max=3;
+                min=num1; mid=num2; max=num3;
             } else {
-                min=1; mid=3; max=2;
+                min=num1; mid=num3; max=num2;
             }
         } else if (num2 < num3){
             if (num1 < num3){
-                min=2; mid=1; max=3;
+                min=num2; mid=num1; max=num3;
             } else {
-                min=2; mid=3; max=1;
+                min=num2; mid=num3; max=num1;
             }
         } else {
             if (num2 < num1){
-                min=3; mid=2; max=1;
+                min=num3; mid=num2; max=num1;
             } else {
-                min=3; mid=1; max=2;
+                min=num3; mid=num1; max=num2;
             }
         }
 
         //Sıralamayı küçükten büyüğe yazdırıyoruz
-        System.out.println(min +". sayı < " + mid + ". sayı < " + max + ". sayı");
+        System.out.println(min + " < " + mid + " < " + max);
 
         //Scanner object'ini kapatıyoruz
         input.close();
