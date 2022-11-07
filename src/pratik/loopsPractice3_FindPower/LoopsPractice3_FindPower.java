@@ -1,4 +1,4 @@
-package pratik.loopPractice3_FindPower;
+package pratik.loopsPractice3_FindPower;
 
 import java.util.Scanner;
 
