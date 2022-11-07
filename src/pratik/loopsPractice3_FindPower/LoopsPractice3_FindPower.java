@@ -37,6 +37,7 @@ public class LoopsPractice3_FindPower {
             result *= 5;
         }
 
+        //Scanner object'ini kapatıyoruz
         input.close();
     }
 }
