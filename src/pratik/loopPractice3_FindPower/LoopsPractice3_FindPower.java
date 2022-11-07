@@ -36,5 +36,7 @@ public class LoopsPractice3_FindPower {
             System.out.println(result);
             result *= 5;
         }
+
+        input.close();
     }
 }
