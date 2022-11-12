@@ -10,9 +10,9 @@ public class UcakBileti {
         int distance,age,travelType;
         double basePrice;
         double ageDiscount = 0;
-        double priceWithDiscount = 0;
+        double priceWithDiscount;
         double twoWayDiscount = 0;
-        double totalPrice = 0;
+        double totalPrice;
 
         Scanner input = new Scanner(System.in);
 
@@ -26,10 +26,14 @@ public class UcakBileti {
         System.out.print("Yolculuk tipini giriniz (1 => Tek Yön , 2 => Gidiş Dönüş ): ");
         travelType = input.nextInt();
 
-        //Toplam tutarı hesaplıyoruz
+        //Kullanıcıdan alınan değerlerin geçerli olduğunu kontrol ediyoruz:
+        //Mesafe ve yaş değerleri pozitif sayı, yolculuk tipi ise 1 veya 2.
         if (distance > 0 && age > 0 && (travelType == 1 || travelType == 2)) {
+
+            //Normal tutarı hesaplıyoruz
             basePrice = distance * 0.10;
 
+            //Yaş indirimini hesaplıyoruz
             if (age <= 12){
                 ageDiscount = basePrice * 0.50;
             } else if (age <= 24){
@@ -38,13 +42,18 @@ public class UcakBileti {
                 ageDiscount = basePrice * 0.30;
             }
 
+            //Yaş indirimini uyguluyoruz
             priceWithDiscount = basePrice - ageDiscount;
 
+            //Yolculut tipi gidiş dönüş seçilirse bilet fiyatı üzerinden %20 indirim uyguluyoruz
             if (travelType == 2){
                 twoWayDiscount = priceWithDiscount * 0.20;
                 totalPrice = (priceWithDiscount - twoWayDiscount) * 2;
+
+            //Yolculuk tipi 1 ve 2 haricinde olup olmadığı yukarıda kontrol edilmişti
+            //Yolculuk tipi 1 ise indirim uygulamıyoruz
             } else {
-                totalPrice = priceWithDiscount - twoWayDiscount;
+                totalPrice = priceWithDiscount;
             }
 
             System.out.println("Toplam Tutar = " + totalPrice);
