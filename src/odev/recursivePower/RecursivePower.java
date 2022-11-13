@@ -26,6 +26,7 @@ public class RecursivePower {
         result = power(base, exponent);
         System.out.println(base + " ^ " + exponent + " = " + result);
 
+        input.close();
     }
 
     //Üslü sayıyı hesaplayan recursive metod
