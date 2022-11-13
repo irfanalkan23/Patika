@@ -2,7 +2,7 @@ package odev.hesapMakinesi2;
 
 import java.util.Scanner;
 
-public class Calculator2 {
+public class JavaPatika {
 
     static void plus() {
         Scanner scan = new Scanner(System.in);
