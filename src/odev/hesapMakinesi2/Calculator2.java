@@ -191,6 +191,6 @@ public class Calculator2 {
             }
         } while (select != 0);
 
-
+        scan.close();
     }
 }
